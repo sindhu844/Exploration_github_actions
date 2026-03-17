@@ -9,8 +9,8 @@ jobs:
         os: [ubuntu-latest]
         version: [11, 17]
     steps:
-      #- name: checkout 
-      #  uses: ubuntu/checkout@v4
+      - name: checkout 
+        uses: actions/checkout@v4
       - name: check directory using pwd
         run: pwd
       - name: check directory using context variable
