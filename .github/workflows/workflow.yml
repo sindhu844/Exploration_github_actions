@@ -19,7 +19,7 @@ jobs:
         uses: actions/setup-java@v5.2.0
         with:
           distribution: temurin
-          version: ${{matrix.version}}
+          java-version: ${{matrix.version}}
       - name: store cache
         uses: actions/cache@v5.0.3
         with:
