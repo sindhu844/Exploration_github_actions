@@ -27,5 +27,13 @@ jobs:
           key: maven-${{hashFiles('pom.xml')}}
       - name: build with maven
         run: mvn clean install
+  test:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: testing java application
+        run: mvn test
+    
+      
       
   
